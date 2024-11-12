@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    /* font-family: "Lato", sans-serif; */
+}
+
+.cNav {
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between !important;
+}
+
+.cOffcanvasTop {
+    height: 20vh !important;
+}
+
+.cNavpills {
+    display: none;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.cNavpills li a {
+    border-bottom: 2px solid transparent;
+    border-radius: 0 !important;
+}
+
+.cNavpills li a:hover {
+    color: black !important;
+    /* border-bottom: 2px solid gray; */
+}
+
+.cMblCtegory .btn,
+.cMblCtegory ul {
+    width: 100%;
+}
+
+.cMblCtegory ul li a {
+    text-align: center;
+}
+
+.cExploreBar .cTxt {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cExploreBar .btn {
+    font-weight: 400;
+}
+
+.cExploreBar div.cTxt {
+    width: 60%;
+}
+
+#bannerCarosel .carousel-item {
+    height: 78vh;
+    display: flex;
+    align-items: center;
+}
+
+.cbc-img-box {
+    width: 64%;
+    height: 100%;
+}
+
+#bannerCarosel img {
+    width: 100%;
+    height: 100%;
+}
+
+#bannerCarosel h2 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+#bannerCarosel h4 {
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+#bannerCarosel p {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    padding-right: 100px;
+}
+
+#bannerCarosel a {
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 0;
+    border: none;
+    padding: 15px 35px;
+}
+
+#bannerCarosel .btn:hover {
+    background-color: #fff;
+}
+
+#bannerCarosel a i {
+    font-size: 18px;
+    margin-left: 6px;
+}
+
+.cbcCaptionBox {
+    width: 36%;
+    background-color: #3B4837;
+}
+
+.cbcCaptionBox .banner_show {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+@media (min-width: 992px) {
+    .cNav .cCollapse {
+        display: block !important;
+        flex-grow: unset;
+        width: 70%;
+    }
+
+    .cCollapse ul {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .cMblCtegory {
+        display: none;
+    }
+
+    .cNavpills {
+        display: flex;
+    }
+
+}
+
+
+
+@media (max-width: 1600px) {
+    #bannerCarosel h2 {
+        font-size: 34px;
+    }
+    
+    #bannerCarosel h4 {
+        font-size: 26px;
+    }
+    #bannerCarosel p {
+        font-size: 18px;
+    }
+    
+    #bannerCarosel a {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+    #bannerCarosel p{
+        padding-right: 35px;
+    }
+}
+@media (max-width: 1224px) {
+    #bannerCarosel h2 {
+        font-size: 28px;
+    }
+    
+    #bannerCarosel h4 {
+        font-size: 22px;
+    }
+    #bannerCarosel p {
+        font-size: 16px;
+    }
+    
+    #bannerCarosel a {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+    .cbc-img-box {
+        width: 60%;
+    }
+    .cbcCaptionBox {
+        width: 40%;
+        background-color: #3B4837;
+    }
+}
+
+@media (min-width: 1224px) {
+    .cNav .cCollapse {
+        width: 52%;
+    }
+}
+
+@media (min-width: 1824px) {
+    .cNav .cCollapse {
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .cExploreBar span.cTxt {
+        display: none;
+    }
+    .cExploreBar div.cTxt {
+        width: 30%;
+    }
+
+    #bannerCarosel .carousel-item{
+        display: block;
+        height: 100%;
+    }
+    .cbcCaptionBox,
+    .cbc-img-box{
+        width: 100%;
+    }
+    .cbcCaptionBox{
+        padding: 50px 0;
+    }
+}

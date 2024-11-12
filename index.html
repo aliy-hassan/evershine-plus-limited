@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUiTHEME项目开发演示站</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- <section class="head_top py-3">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+
+                <div class="col-lg-3 col-xl-2">
+                    <a class="d-block text-center logo" href="http://weldton.jianma.org:61380" title="HUiTHEME项目开发演示站">
+                        <img class=""
+                            src="http://weldton.jianma.org:61380/wp-content/uploads/2024/10/Adjusted-hioglass-website-logo.png"
+                            alt="">
+                        <h1 class="mb-0 fs24 text-black fw600 m_fs20"></h1>
+                    </a>
+                </div>
+
+                <div class="col-lg-9 col-xl-10">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <button class="bg_no border-0 fs20 me-xl-0 me-4" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#search_offcanvas"><i class="bi bi-search"></i></button>
+                        <nav class="header-menu">
+                            <ul id="menu-%e9%a1%b6%e9%83%a8%e5%af%bc%e8%88%aa" class="header-menu-ul">
+                                <li id="menu-item-1590"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1590">
+                                    <a>Services</a>
+                                    <ul class="sub-menu" style="display: none;">
+                                        <li id="menu-item-1594"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1594">
+                                            <a href="http://weldton.jianma.org:61380/about/">About</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-1591"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1591">
+                                    <a>Company</a>
+                                    <ul class="sub-menu" style="display: none;">
+                                        <li id="menu-item-1695"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1695">
+                                            <a href="http://weldton.jianma.org:61380/xwzx/">BLOG &amp; IDEA</a>
+                                        </li>
+                                        <li id="menu-item-1595"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1595">
+                                            <a href="http://weldton.jianma.org:61380/faq/">Faq</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-1592"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1592"><a
+                                        href="http://weldton.jianma.org:61380/contact/">Contact</a></li>
+                            </ul>
+                        </nav> <button class="mobile_an me-4" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobile_right_nav"><i class="bi bi-list"></i></button>
+                        <button class="btn bg-secondary-subtle rounded-pill me-4" type="button"><img
+                                class="rounded-circle" src="https://picsum.photos/30/30" alt=""></button>
+                        <a class="head_submit text-nowrap bg_hongse text-white text-center fs20 p-3" href="####"
+                            title="SUBMIT YOUR DESIGN" target="_blank"><i class="bi bi-envelope me-3"></i>SUBMIT YOUR
+                            DESIGN</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 cNav">
+        <div class="Container">
+            <a class="navbar-brand" href="#">
+                <img src="http://weldton.jianma.org:61380/wp-content/uploads/2024/10/Adjusted-hioglass-website-logo.png"
+                    alt="Bootstrap" width="125" height="40">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse cCollapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                        aria-controls="offcanvasTop"><i class="bi bi-search"></i></button>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Company</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Blog & Ideas</a></li>
+                        <li><a class="dropdown-item" href="#">FAQs</a></li>
+                        <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li> -->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-danger py-2"> <i class="bi bi-envelope"></i> Submit Your
+                        Design</button>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="category-bar">
+        <ul class="nav nav-pills nav-fill cNavpills">
+            <li class="nav-item">
+                <!-- <a class="nav-link active" aria-current="page" href="#">Active</a> -->
+                <a class="nav-link text-secondary" href="#">Candle Holders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Drinkingware</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Jars + Domes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Oil Lamp</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Solutions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Terrariums</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Vases</a>
+            </li>
+        </ul>
+        <!-- for mobile screens -->
+        <!-- <li class="dropdown ">
+            <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Product Categories</a> -->
+        <div class="dropdown cMblCtegory">
+            <button class="btn btn-secondary dropdown-toggle rounded-0 font-weight-bold" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Product Categories
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Candle Holders</a></li>
+                <li><a class="dropdown-item" href="#">Drinkingware</a></li>
+                <li><a class="dropdown-item" href="#">Jars + Domes</a></li>
+                <li><a class="dropdown-item" href="#">Oil Lamp</a></li>
+                <li><a class="dropdown-item" href="#">Solutions</a></li>
+                <li><a class="dropdown-item" href="#">Terrariums</a></li>
+                <li><a class="dropdown-item" href="#">Vases</a></li>
+                <!-- <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div id="" class="carousel slide bg-danger my-md-2 py-2 px-3 cExploreBar">
+        <div class="carousel-inner ">
+            <div class="carousel-item cCaroslItem active">
+                <div class="d-flex align-items-center justify-content-center">
+                    <span class="text-light cTxt border-end me-lg-3 pe-lg-3 m_fs14 text1 mb_none">Hio: Handcrafted +
+                        Innovation = Opportunity</span>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-unset">
+                        <div class="text-light cTxt">Hio Glass: Handcrafted Globally, Innovating for You.</div>
+                        <div
+                            class="btn btn-warning px-3 py-2 text-white bg_notify_btn ms-3 d-flex align-items-center text-nowrap text1 m_fs12 flex-shrink-0">
+                            Discover Hio <i class="bi bi-caret-right-fill ms-1 fs24 m_fs12"></i></div>
+                    </div>
+                </div>
+                <!-- <p>asdfasf </p> -->
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item cCaroslItem">
+                <div class="d-flex align-items-center justify-content-center">
+                    <span class="text-light cTxt border-end me-lg-3 pe-lg-3 m_fs14 text1 mb_none">Hio: Handcrafted +
+                        Innovation = Opportunity</span>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-unset">
+                        <div class="text-light cTxt">Hio Glass: Handcrafted Globally, Innovating for You.</div>
+                        <div
+                            class="btn btn-warning px-3 py-2 text-white bg_notify_btn ms-3 d-flex align-items-center text-nowrap text1 m_fs12 flex-shrink-0">
+                            Discover Hio <i class="bi bi-caret-right-fill ms-1 fs24 m_fs12"></i></div>
+                    </div>
+                </div>
+                <!-- <p>asdfasf </p> -->
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item cCaroslItem">
+                <div class="d-flex align-items-center justify-content-center">
+                    <span class="text-light cTxt border-end me-lg-3 pe-lg-3 m_fs14 text1 mb_none">Hio: Handcrafted +
+                        Innovation = Opportunity</span>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-unset">
+                        <div class="text-light cTxt">Hio Glass: Handcrafted Globally, Innovating for You.</div>
+                        <div
+                            class="btn btn-warning px-3 py-2 text-white bg_notify_btn ms-3 d-flex align-items-center text-nowrap text1 m_fs12 flex-shrink-0">
+                            Discover Hio <i class="bi bi-caret-right-fill ms-1 fs24 m_fs12"></i></div>
+                    </div>
+                </div>
+                <!-- <p>asdfasf </p> -->
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+
+    <div id="bannerCarosel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bannerCarosel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#bannerCarosel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#bannerCarosel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <div class="cbc-img-box">
+                    <img src="./images/About-Banner.jpg" class="d-block" alt="...">
+                </div>
+                <div class="bg- text-light d-flex align-items-center h-100 cbcCaptionBox">
+                    <div class="banner_show">
+                        <h2 class="">Your Vision, Our Glass.</h2>
+                        <h4>Cost-Effective Customization.</h4>
+                        <p>Elevate your brand with premium, customizable glass crafts. Backed by a robust supply chain
+                            and trusted by 100+ global partners.</p>
+                        <p><a class="btn btn-light btn-outline-danger text-danger"
+                                href="">Get a Free Quote <i class="bi bi-chat-right-text"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <div class="cbc-img-box">
+                    <img src="./images/test4.jpg" class="d-block" alt="...">
+                </div>
+                <div class="bg- text-light d-flex align-items-center h-100 cbcCaptionBox">
+                    <div class="banner_show">
+                        <h2 class="">Your Vision, Our Glass.</h2>
+                        <h4>Cost-Effective Customization.</h4>
+                        <p>Elevate your brand with premium, customizable glass crafts. Backed by a robust supply chain
+                            and trusted by 100+ global partners.</p>
+                        <p><a class="btn btn-light btn-outline-danger text-danger"
+                                href="">Get a Free Quote <i class="bi bi-chat-right-text"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <div class="cbc-img-box">
+                    <img src="./images/test3.webp" class="d-block" alt="...">
+                </div>
+                <div class="bg- text-light d-flex align-items-center h-100 cbcCaptionBox">
+                    <div class="banner_show">
+                        <h2 class="">Your Vision, Our Glass.</h2>
+                        <h4>Cost-Effective Customization.</h4>
+                        <p>Elevate your brand with premium, customizable glass crafts. Backed by a robust supply chain
+                            and trusted by 100+ global partners.</p>
+                        <p><a class="btn btn-light btn-outline-danger text-danger"
+                                href="">Get a Free Quote <i class="bi bi-chat-right-text"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarosel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarosel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+
+
+    <div class="offcanvas offcanvas-top cOffcanvasTop" tabindex="-1" id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasTopLabel">Search anything</h5> -->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
