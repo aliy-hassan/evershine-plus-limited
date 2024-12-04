@@ -6,8 +6,14 @@ body {
 body * {
     /* font-family: "Lato", sans-serif; */
 }
-
-.cNav {
+.cNav{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: #fff;
+}
+.cNav-box {
     margin: 0 auto;
     width: 90%;
     justify-content: space-between !important;
@@ -32,6 +38,7 @@ body * {
     color: black !important;
     /* border-bottom: 2px solid gray; */
 }
+
 
 .cMblCtegory .btn,
 .cMblCtegory ul {
@@ -119,6 +126,43 @@ body * {
     width: 80%;
 }
 
+/* reuseable */
+.secHeading{
+    font-size: 46px;
+    font-weight: 800;
+    font-family: lato;
+}
+.secDesc{
+    font-size: 24px;
+}
+.prod-line-section{
+    /* background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+}
+.prj-sec{
+    width: 90%;
+    margin: 0 auto;
+}
+/* .ybs-row .card{
+    width: ;
+} */
+
+.your-brand-section{
+    background: url('../images/index_customize.jpeg');
+}
+
+.card-title i{
+    color: #dc3545;
+}
+
+/* //////// */
+
+.pls-btn,
+.pls-btn:hover{
+    background: #FFF2F2;
+    color: #dc3545  ;
+}
+
+
 
 
 @media (min-width: 992px) {
@@ -149,41 +193,47 @@ body * {
     #bannerCarosel h2 {
         font-size: 34px;
     }
-    
+
     #bannerCarosel h4 {
         font-size: 26px;
     }
+
     #bannerCarosel p {
         font-size: 18px;
     }
-    
+
     #bannerCarosel a {
         font-size: 18px;
         padding: 12px 30px;
     }
-    #bannerCarosel p{
+
+    #bannerCarosel p {
         padding-right: 35px;
     }
 }
+
 @media (max-width: 1224px) {
     #bannerCarosel h2 {
         font-size: 28px;
     }
-    
+
     #bannerCarosel h4 {
         font-size: 22px;
     }
+
     #bannerCarosel p {
         font-size: 16px;
     }
-    
+
     #bannerCarosel a {
         font-size: 16px;
         padding: 12px 30px;
     }
+
     .cbc-img-box {
         width: 60%;
     }
+
     .cbcCaptionBox {
         width: 40%;
         background-color: #3B4837;
@@ -206,19 +256,22 @@ body * {
     .cExploreBar span.cTxt {
         display: none;
     }
+
     .cExploreBar div.cTxt {
         width: 30%;
     }
 
-    #bannerCarosel .carousel-item{
+    #bannerCarosel .carousel-item {
         display: block;
         height: 100%;
     }
+
     .cbcCaptionBox,
-    .cbc-img-box{
+    .cbc-img-box {
         width: 100%;
     }
-    .cbcCaptionBox{
+
+    .cbcCaptionBox {
         padding: 50px 0;
     }
 }
