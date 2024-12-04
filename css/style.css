@@ -6,13 +6,15 @@ body {
 body * {
     /* font-family: "Lato", sans-serif; */
 }
-.cNav{
+
+.cNav {
     position: sticky;
     top: 0;
     z-index: 999;
     width: 100%;
     background: #fff;
 }
+
 .cNav-box {
     margin: 0 auto;
     width: 90%;
@@ -127,44 +129,95 @@ body * {
 }
 
 /* reuseable */
-.secHeading{
+.secHeading {
     font-size: 46px;
     font-weight: 800;
     font-family: lato;
 }
-.secDesc{
+
+.secDesc {
     font-size: 24px;
 }
-.prod-line-section{
+
+.prod-line-section {
     /* background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
 }
+
 .prj-sec{
     width: 90%;
     margin: 0 auto;
+    padding: 70px 0;
 }
-/* .ybs-row .card{
-    width: ;
-} */
 
-.your-brand-section{
+.ybs-row .card {
+    transition: .25s;
+    cursor: pointer;
+    border: none;
+}
+
+.ybs-row .card:hover {
+    transform: translateY(-7px)
+}
+
+.your-brand-section {
     background: url('../images/index_customize.jpeg');
 }
 
-.card-title i{
+.card-title i {
     color: #dc3545;
+}
+
+.wws-sec{
+    background: url(../images/index_who.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.wws-sec h2::before{
+    content: '';
+    display: inline-block;
+    width: 110px;
+    height: 3px;
+    background: linear-gradient(to right,#fff,#F34C4A);
+    vertical-align: middle;
+    margin-right: 15px
+}
+
+.wws-sec h2::after{
+    content: '';
+    display: inline-block;
+    width: 110px;
+    height: 3px;
+    background: linear-gradient(to right,#F34C4A,#fff);
+    vertical-align: middle;
+    margin-left: 15px
+}
+
+.wws-sec .card-img-overlay{
+    display: none;
+    background-color: #A12D30;
+    opacity: .9;
+}
+.wws-sec .card:hover .card-img-overlay{
+    display: flex;
 }
 
 /* //////// */
 
 .pls-btn,
-.pls-btn:hover{
+.pls-btn:hover {
     background: #FFF2F2;
-    color: #dc3545  ;
+    color: #dc3545;
 }
 
 
 
 
+@media (max-width: 576px) {
+    .wws-sec .card-text{
+        display: none!important;
+    }
+}
 @media (min-width: 992px) {
     .cNav .cCollapse {
         display: block !important;
